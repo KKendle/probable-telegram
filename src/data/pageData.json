@@ -1,3 +1,20 @@
 {
-  "author": "Kevin"
+  "author": "Kevin",
+  "navigation": [
+    {
+      "navLinkTitle": "Home",
+      "navLink": "./index.html",
+      "navLevel": "1"
+    },
+    {
+      "navLinkTitle": "About",
+      "navLink": "./about.html",
+      "navLevel": "1"
+    },
+    {
+      "navLinkTitle": "Contact",
+      "navLink": "./contact.html",
+      "navLevel": "1"
+    }
+  ]
 }

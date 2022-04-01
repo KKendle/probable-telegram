@@ -6,9 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="{{author}}">
   <title>{{pageTitle}}</title>
+  {% block styles %}<!-- styles here -->{% endblock %}
 </head>
 <body>
+  {% include './parts/navigation.njk' %}
   {% block content %}
+    <p>Add content here</p>
   {% endblock %}
+  {% block scripts %}<!-- scripts here -->{% endblock %}
 </body>
 </html>
