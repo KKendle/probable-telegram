@@ -1,8 +1,10 @@
+{% from '../macros/insert-spaces.njk' import insertSpaces %}
+
 <nav>
   <ul>
     {% for item in navigation %}
       <li class="nav-item nav-level-{{item.navLevel}}">
-        <a class="nav-link" href="{{item.navLink}}">{{item.navLinkTitle}}</a>
+        <a class="nav-link" href="{{item.navLink}}">{{insertSpaces(2)}}{{item.navLinkTitle}}{{insertSpaces(2)}}</a>
       </li>
     {% endfor %}
   </ul>
